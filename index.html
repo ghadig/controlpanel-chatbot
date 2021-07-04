@@ -1,0 +1,129 @@
+<html>
+<link rel="icon" type="controlpanel/JPG" href="iconn.jpg">
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"><!--link to css-->
+ <title>Control Panel</title>
+</head>
+<body>
+<p class="d"style="font-size:50px;">Control Direction</p>
+<form action="dconn.php"method="post" name="form1"><!-- link to php-->
+
+<div>
+<input class="ri"type="submit" value="RIGHT" name="right">
+<!---------------------------------------->
+<input class="st" type="submit" value="STOP" name="stop" >
+<!---------------------------------------->
+<input class="to" type="submit" value="TOP" name="top">
+<!---------------------------------------->
+<input class="le" type="submit" value="LEFT" name="left" >
+<!---------------------------------------->
+<input class="bo" type="submit" value="BOTTOM" name="bottom" >
+</div>
+</form>
+<!------------------------------------------------------------------------- the control panel part ------------------------------------------------------------>
+<p class="m" style="font-size:50px;">Control Motors</p>
+ <form action="conn.php"method="post" name="form1"><!-- link to php-->
+  <div class="motor">
+    <div class="motor">
+  <span id="rangeValue">0</span>
+          <label class="lab" for="volume" name="motor11">motor1: </label>
+        <Input class="range" type="range" name="motor1" value="0" min="0" max="180" 
+		onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+		
+        
+ <br>
+		 <span id="rangeValue2">0</span>
+		 <label class="lab" for="volume" name="motor22">motor2: </label>
+        <Input class="range" type="range" name="motor2" value="0" min="0" max="180" 
+		onChange="rangeSlide2(this.value)" onmousemove="rangeSlide2(this.value)">
+		
+ <br>
+         <span id="rangeValue3">0</span>
+        <label  class="lab" for="volume" name="motor33">motor3: </label>
+        <Input class="range" type="range" name="motor3" value="0" min="0" max="180" 
+		onChange="rangeSlide3(this.value)" onmousemove="rangeSlide3(this.value)">
+		
+      
+		 
+ <br>
+		 <span id="rangeValue4">0</span>
+		   <label class="lab" for="volume" name="motor44">motor4:</label>
+        <Input class="range" type="range" name="motor4" value="0" min="0" max="180" 
+		onChange="rangeSlide4(this.value)" onmousemove="rangeSlide4(this.value)">
+		
+         
+		 
+ <br>
+		 <span id="rangeValue5" >0</span>
+        <label class="lab" for="volume" name="motor55">motor5: </label>
+        <Input class="range" type="range" name="motor5" value="0" min="0" max="180" 
+		onChange="rangeSlide5(this.value)" onmousemove="rangeSlide5(this.value)">
+	
+        
+		  <br>
+		<span id="rangeValue6" >0</span>
+        <label class="lab" 	for="volume" name="motor66">motor6: </label>
+        <Input class="range" type="range" name="motor6" value="0" min="0" max="180" 
+		onChange="rangeSlide6(this.value)" onmousemove="rangeSlide6(this.value)">
+	
+        
+		
+		 <!--************************************************************************************-->
+		 		 <script type="text/javascript">
+        function rangeSlide(value) {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
+    </script>
+	<!--************************************88-->
+      <script type="text/javascript">
+        function rangeSlide2(value) {
+            document.getElementById('rangeValue2').innerHTML = value;
+        }
+    </script>
+	<!--************************************88-->
+      <script type="text/javascript">
+        function rangeSlide3(value) {
+            document.getElementById('rangeValue3').innerHTML = value;
+        }
+    </script>
+	<!--************************************88-->
+      <script type="text/javascript">
+        function rangeSlide4(value) {
+            document.getElementById('rangeValue4').innerHTML = value;
+        }
+    </script>
+	<!--************************************88-->
+     <script type="text/javascript">
+        function rangeSlide5(value) {
+            document.getElementById('rangeValue5').innerHTML = value;
+        }
+    </script>
+	<!--************************************88-->
+     <script type="text/javascript">
+        function rangeSlide6(value) {
+            document.getElementById('rangeValue6').innerHTML = value;
+        }
+    </script>
+	<br>
+	<br>
+	<div class="buttons">
+	    <input  class="save" type="submit" value = "Save" name =" save" id="save">
+		<input  class="run"type="submit" value = "ON" name="run" id="run">
+		</div>
+  </div>
+  </form>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "cc4c02c2-a4be-4126-a612-f169f624b2f1", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "8e62ee8d-5690-43de-8104-a80160efea6a", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>

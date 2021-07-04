@@ -1,0 +1,179 @@
+body{
+ 
+margin:0;
+padding:0;
+font-family:Helvetica,Arial;
+    height: 100%;
+    background: linear-gradient(90deg,     #d6e3fa 50%,   #d6fae5 50%);
+
+}/*control direction*/
+.d{
+	  float: right;
+	  margin-left:20;
+	   margin-right:200;
+	    margin-top:5;
+	   color: #3e8051;
+}
+div.r{
+ position: absolute;
+  right: 0;
+}
+/* the right button*/
+.ri{
+  background-color: white; 
+  color: black; 
+  border: 2px solid   #88d8b2 ;
+  height: 50;
+  width: 100;
+float: right;
+ margin-right:180;
+ margin-top:200;
+ border-radius: 10px;
+  position: absolute;
+  right:0;
+}
+.ri:hover{
+  background-color:#88d8b2 ;
+  color: white;
+}
+/*top button*/
+.to{
+background-color: white; 
+  color: black; 
+  border: 2px solid   #88d8b2 ;
+  height: 50;
+  width: 100;
+float: right;
+ margin-right:300;
+ margin-top:120;
+ border-radius: 10px;
+   position: absolute;
+  right:0;
+}
+.to:hover{
+ background-color:#88d8b2 ;
+  color: white;
+}
+/* stop button*/
+.st{
+	background-color: white; 
+  color: black; 
+  border: 2px solid     #f3a182  ;
+    height: 50;
+  width: 100;
+float: right;
+ margin-right:300;
+ margin-top:200;
+border-radius: 50px;
+   position: absolute;
+  right:0;
+}
+.st:hover{
+	background-color:  #f3a182 ;
+  color: white;
+}
+/* the left button */
+.le{
+background-color: white; 
+  color: black; 
+  border: 2px solid    #88d8b2  ;
+    height: 50;
+  width: 100;
+float: right;
+ margin-right:420;
+ margin-top:200;
+border-radius: 10px;
+   position: absolute;
+  right:0;
+}
+.le:hover{
+	background-color:  #88d8b2 ;
+  color: white;
+}
+/* the bottom*/
+.bo{
+	background-color: white; 
+  color: black; 
+  border: 2px solid    #88d8b2  ;
+    height: 50;
+  width: 100;
+float: right;
+ margin-right:300;
+ margin-top:280;
+border-radius: 10px;
+   position: absolute;
+  right:0;
+}
+.bo:hover{
+	background-color:  #88d8b2 ;
+  color: white;
+}
+
+/* __________________________the control panel_______________________*/
+.m{
+	 float: left;
+	 margin-left:90;
+	 margin-right:180;
+	 margin-top:5;
+	 color:  #3e6f80;
+}
+/*sliders*/
+div.motor {
+	
+margin-top: 50;
+  margin-bottom: 10;
+  margin-left:40; 
+  margin-right: 20;
+  margin-top:20;
+  padding: 50;
+  width: 500px;
+}
+/* sav and run buttons*/
+.buttons{
+	margin-top: 50;
+  margin-bottom: 10;
+  margin-left:40; 
+  margin-right: 20;
+  margin-top:20;
+}
+.save {
+  background-color: white; 
+  color: black; 
+  border: 2px solid  #91a3e5;
+  height: 25px; 
+  width: 50px;
+ margin-right:80;
+ float:right;
+}
+
+.save:hover {
+  background-color:  #91a3e5;
+  color: white;
+  margin-right;80;
+}
+
+.run{
+  background-color: white; 
+  color: black; 
+  border: 2px solid  #91a3e5;
+    height: 25px; 
+  width: 50px;
+   margin-right:20;
+float:right;
+}
+
+.run:hover {
+  background-color: #91a3e5;
+  color: white;
+   margin-right;80;
+}
+
+#save{
+margin-left: 500;
+  margin-right: 80;
+}
+#run{
+	margin-top:20;
+margin-left: 500;
+  margin-right: 80;
+}
